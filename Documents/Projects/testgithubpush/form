@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset = 'utf-8'/>
+      <title>Form</title>
+      <style media="screen">
+      legend {
+        font-size: 24px;
+      }
+      </style>
+    </head>
+    <body>
+      <form>
+        <fieldset>
+          <legend>Account info</legend>
+          <label for="email" aria-required="true" >Enter your e-mail</label>
+          <input type="email" name="email" placeholder="e.g. asdf@asdf.com">
+          <label for "password">Choose a password<label>
+          <input type="password" name="password" placeholder="choose a password">
+        </fieldset>
+
+        <fieldset>
+          <legend>Personal info</legend>
+          <label for ="first-name">Enter your first name</label>
+          <input type="text" name="first-name" placeholder='e.g. The Rock'/>
+          <label for="last-name">Enter your last name</label>
+          <input type="text" name="last-name" placeholder='e.g. Johnson'/>
+          <label for="tel">Enter your phone number</label>
+          <input type="tel" name="tel" placeholder ="222-222-2222">
+          <label>
+            <input type="radio" name="genger" value="prefer not to say" checked />prefer not to say
+          </label>
+          <label>
+            <input type="radio" name="genger" value="male"/>male
+          </label>
+          <label>
+            <input type="radio" name="genger" value="female"/>female
+          </label>
+          <label>
+            <input type="radio" name="genger" value="other"/>other
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Mailing info</legend>
+          <label for="address-line1">Address (Line 1)</label>
+          <input type="text" name="address-line1" placeholder="e.g. Street Address"/>
+          <label for="address-line2">Address (Line 2)</label>
+          <input type="text" name="address-line2" placeholder="e.g. Suite, Unit, Apartment number"/>
+          <label for="city">City</label>
+          <input type="text" name="city" />
+          <label for="state">State/Province/Region</label>
+          <input type="text" name="state" />
+          <label for="zip-code">Zip/Postal Code</label>
+          <input type="text" name="zip-code" />
+          <label for="country">Country</label>
+          <select name="country">
+            <optgroup label="Europe">
+              <option value="UK">UK</option>
+              <option value="Germany">Germany</option>
+              <option value="France">France</option>
+            </optgroup>
+            <optgroup label="North America">
+              <option value="USA">USA</option>
+              <option value="Canada">Canada</option>
+            </optgroup>
+          </select>
+        </fieldset>
+
+
+          <button type="reset" name="reset">Reset the form</button>
+          <button type="submit" name="Submit" disabled="true">Submit</button>
+      </form>
+    </body>
+  </html>
